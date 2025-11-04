@@ -7,6 +7,6 @@ class Friends(models.Model):
     neme = models.TextField(blank=False, null=False)
     profession = models.TextField(blank=False, null=False)
     profession_description = models.TextField(blank=True, null=True)
-    photo_url = models.URLField(blank=True, null=True)
+    photo_url = models.URLField(blank=False, null=False)
 
 
