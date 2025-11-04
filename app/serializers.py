@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import Friends
+from .models import Friend
 
-class FriendsSerializer(serializers.ModelSerializer):
+class FriendSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Friends
+        model = Friend
         fields = '__all__'

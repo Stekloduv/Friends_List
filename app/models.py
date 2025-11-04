@@ -2,7 +2,7 @@ import uuid
 
 from django.db import models
 
-class Friends(models.Model):
+class Friend(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     neme = models.TextField(blank=False, null=False)
     profession = models.TextField(blank=False, null=False)
