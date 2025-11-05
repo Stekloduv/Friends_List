@@ -7,6 +7,10 @@ class Friend(models.Model):
     neme = models.TextField(blank=False, null=False)
     profession = models.TextField(blank=False, null=False)
     profession_description = models.TextField(blank=True, null=True)
-    photo_url = models.URLField(blank=False, null=False)
+    photo_url = models.ImageField(upload_to='friends_photos/', null=True, blank=True)
+
+    def __str__(self):
+        return self.name
+
 
 
