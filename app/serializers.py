@@ -1,9 +1,8 @@
 from rest_framework import serializers
 from .models import Friend
 
-
 class FriendSerializer(serializers.ModelSerializer):
-    photo_url = serializers.SerializerMethodField()
+    photo_url = serializers.ImageField(required=False, allow_null=True)
 
     class Meta:
         model = Friend
