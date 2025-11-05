@@ -12,5 +12,5 @@ class FriendSerializer(serializers.ModelSerializer):
     def get_photo_url(self, obj):
         request = self.context.get('request')
         if obj.photo:
-            return request.build_absolute_uri(obj.photo.url)
+            return request.build_absolute_uri(obj.photo_url.url)
         return None
