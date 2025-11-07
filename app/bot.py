@@ -146,5 +146,6 @@ app.add_handler(CommandHandler("list", list_friends))
 app.add_handler(CommandHandler("friend", get_friend))
 app.add_handler(conv_handler)
 
-print("Бот запущено...")
-app.run_polling()
+if __name__ == "__main__":
+    print("Бот запущено...")
+    app.run_polling()
